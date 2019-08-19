@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/re"
+        android:background="?attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:text="Chọn Bàn"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/load"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cached"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_below="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Bàn đôi"
+            android:textSize="23sp"
+            android:textColor="#FF0000"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/table1"
+            android:src="@drawable/table"
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_below="@+id/table1"
+            android:id="@+id/tvtable1"
+            android:text="Bàn số 1"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/tvtable1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/table2"
+            android:src="@drawable/table"
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_below="@+id/table2"
+            android:id="@+id/tvtable2"
+            android:text="Bàn số 2"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/tvtable2"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/table3"
+            android:src="@drawable/table"
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_below="@+id/table3"
+            android:id="@+id/tvtable3"
+            android:text="Bàn số 3"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/tvtable3"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/table4"
+            android:src="@drawable/table"
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_below="@+id/table4"
+            android:id="@+id/tvtable4"
+            android:text="Bàn số 4"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/tvtable4"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/table5"
+            android:src="@drawable/table"
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_below="@+id/table5"
+            android:id="@+id/tvtable5"
+            android:text="Bàn số 5"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Bàn nhóm"
+            android:textSize="23sp"
+            android:textColor="#FF0000"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/table6"
+            android:src="@drawable/table"
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_below="@+id/table6"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tvtable6"
+            android:text="Bàn số 6"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/tvtable6"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/table7"
+            android:src="@drawable/table"
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_below="@+id/table7"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tvtable7"
+            android:text="Bàn số 7"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/tvtable7"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/table8"
+            android:src="@drawable/table"
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_below="@+id/table8"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tvtable8"
+            android:text="Bàn số 8"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/tvtable8"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/table9"
+            android:src="@drawable/table"
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_below="@+id/table9"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tvtable9"
+            android:text="Bàn số 9"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/tvtable9"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/table10"
+            android:src="@drawable/table"
+            android:background="@null"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_below="@+id/table10"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tvtable10"
+            android:text="Bàn số 10"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/pro"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

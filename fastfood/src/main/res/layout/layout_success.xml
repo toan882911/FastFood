@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:background="?attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/textviewsuccess"
+            android:text="Đơn Hàng"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/re2"
+
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/re2"
+        android:id="@+id/re6"
+        android:background="#C2C2C1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        ></RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/re6"
+        android:id="@+id/re3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgfood"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/meta"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/re4"
+        android:layout_below="@+id/re3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textviewmon"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Tên Món"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textviewmon2"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Bánh Kem"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/textviewmon"
+            android:id="@+id/textviewgia"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Giá Tiền "
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/textviewmon2"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textviewgia2"
+            android:layout_marginRight="20dp"
+            android:text="10000"
+            android:textColor="#000000"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/textviewgia"
+            android:id="@+id/textviewgiam"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Giảm Giá "
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/textviewgia2"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textviewgiam2"
+            android:layout_marginRight="20dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/re5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/re4"
+        android:background="#C2C2C1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        ></RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/re7"
+        android:layout_below="@+id/re5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/total2"
+            android:text="Total"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/total"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20sp"
+            android:layout_alignParentRight="true"
+            android:text="10000"
+            android:textColor="#FF0000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/re7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/next"
+            android:text="Tiếp Tục"
+            android:textSize="25sp"
+            android:background="#05CCAE"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

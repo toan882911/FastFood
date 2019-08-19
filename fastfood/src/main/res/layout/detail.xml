@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="false">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        >
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:layout_collapseMode="pin"
+                android:background="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <ImageButton
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/ic_back"/>
+                    <TextView
+                        android:id="@+id/labelname"
+                        android:text="món ăn "
+                        android:layout_gravity="center"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.Toolbar>
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"/>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="28dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/name"
+            android:text="Bún Bò Mộc Huế"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/name"
+            android:id="@+id/mota"
+            android:layout_marginLeft="40dp"
+            android:text="Bún Bò Ngon Lắm "
+            android:textColor="#726D6D"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="40dp"
+            android:id="@+id/danhmuc"
+            android:layout_marginRight="20dp"
+            android:text="Đồ Ăn "
+            android:layout_alignParentRight="true"
+            android:textColor="#FF0000"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:drawableRight="@drawable/foodnetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:background="#8A8181"
+            android:layout_below="@+id/danhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></RelativeLayout>
+        <TextView
+            android:layout_below="@+id/mota"
+            android:text="Giá Tiền"
+            android:id="@+id/tvgia"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#8A000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/gia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvgia"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:text="10.000 vnđ"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_below="@+id/mota"
+            android:text="Giảm Giá"
+            android:id="@+id/tvgiamgia"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_centerInParent="true"
+            android:textColor="#8A000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/giamgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvgiamgia"
+            android:layout_centerInParent="true"
+            android:text="0 %"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_below="@+id/mota"
+            android:text="Yêu Thích"
+            android:id="@+id/tvyeuthich"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#8A000000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/yeuthich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvyeuthich"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/cart"
+            android:background="#05CCAE"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:text="Đặt Món"
+            android:textStyle="bold"
+            android:layout_below="@+id/yeuthich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#fff"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        app:layout_anchor="@id/appBar"
+        android:visibility="visible"
+        android:src="@drawable/tim2"
+        app:layout_anchorGravity="bottom"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#fff"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone"
+        app:layout_anchor="@id/appBar"
+        android:src="@drawable/ic_tim"
+        app:layout_anchorGravity="bottom"
+        />
+
+    <include layout="@layout/detail_process" />
+</android.support.design.widget.CoordinatorLayout>
